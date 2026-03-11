@@ -1,0 +1,17 @@
+while wait(0.9) do
+    for i, steel in ipairs(workspace:GetDescendants()) do
+        if steel:FindFirstChild("Humanoid") then
+            if not steel:FindFirstChild("EspBox") then
+                if steel ~= game.Players.LocalPlayer.Character then
+                    local esp = Instance.new("BoxHandleAdornment",steel)
+                    esp.Adornee = steel
+                    esp.ZIndex = 0
+                    esp.Size = Vector3.new(4,5,1)
+                    esp.Transparency = 0.65
+                    esp.AlwaysOnTop = true
+                    esp.Name = "EspBox"
+                end
+            end
+        end
+    end
+end
