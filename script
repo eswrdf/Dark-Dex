@@ -1,0 +1,5 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+-- discord.gg/rezware
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RezWare-SoftWare/Dex/refs/heads/main/Dex.lua"))()
